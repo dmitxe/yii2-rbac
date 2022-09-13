@@ -1,10 +1,10 @@
 <?php
 
-/* 
+/*
  * This file is part of the Dektrium project
- * 
+ *
  * (c) Dektrium project <http://github.com/dektrium>
- * 
+ *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
@@ -47,7 +47,9 @@ use yii\widgets\ActiveForm;
     ],
 ]) ?>
 
-<?= Html::submitButton(Yii::t('rbac', 'Update assignments'), ['class' => 'btn btn-success btn-block']) ?>
+<div class="d-grid mt-2">
+    <?= Html::submitButton(Yii::t('rbac', 'Update assignments'), ['class' => 'btn btn-success btn-block']) ?>
+</div>
 
 <?php ActiveForm::end() ?>
 

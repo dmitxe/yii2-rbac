@@ -17,7 +17,7 @@
 use kartik\select2\Select2;
 use yii\helpers\Url;
 use yii\web\JsExpression;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
 
 ?>
@@ -62,6 +62,8 @@ use yii\helpers\Html;
     ],
 ]) ?>
 
-<?= Html::submitButton(Yii::t('rbac', 'Save'), ['class' => 'btn btn-success btn-block']) ?>
+<div class="d-grid mt-2">
+    <?= Html::submitButton(Yii::t('rbac', 'Save'), ['class' => 'btn btn-success btn-block']) ?>
+</div>
 
 <?php ActiveForm::end() ?>
